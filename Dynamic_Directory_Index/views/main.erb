@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <body>
+    <% @filenames.each do |f| %>
+      <ul>
+        <li><a href=<%= "../../public/#{f}" %>><%= f %></a></li>
+      </ul>
+    <% end %>
+  </body>
+  <body>
+    <% if @sort_order == "ascending" %>
+      <a href="/?sort=descending">Sort descending</a>
+    <% elsif @sort_order == "descending" %>
+      <a href="/?sort=ascending">Sort ascending</a>
+    <% end %>
+  </body>
+</html>
