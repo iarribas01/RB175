@@ -1,0 +1,11 @@
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <h4>
+        <a href="/users/<%= user[0].to_s %>">
+          <%= user[0].to_s %>
+        </a>
+      </h4>
+    </li>
+  <% end %>
+</ul>
